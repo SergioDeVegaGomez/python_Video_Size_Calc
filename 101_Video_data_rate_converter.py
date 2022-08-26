@@ -20,7 +20,7 @@ def data_gigabits(bit_depth, hor_res, vert_res, frames_per_sec):
     size_in_TB = (size/1024**4)
     return print(f"Size in TB of one hour of uncompressed video with {bit_depth} bit depth, {hor_res} * {vert_res } resolution and {frames_per_sec} frames per second = " + str(size_in_TB*3600) + " TB")
 
-
+# some examples
 print(data_gigabits(24,1920,1080,60))
 print(data_gigabits(24,3840,2160,60))
 print(data_gigabits(24,3840,2160,120))
